@@ -1,4 +1,4 @@
-class FfmpegSkyzyx < Formula
+class FfmpegExtended < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
   url "https://ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz"
@@ -6,7 +6,7 @@ class FfmpegSkyzyx < Formula
   revision 1
   head "https://github.com/FFmpeg/FFmpeg.git"
 
-  conflicts_with "ffmpeg", :because => "ffmpeg-skyzyx also ships a ffmpeg binary"
+  conflicts_with "ffmpeg", :because => "ffmpeg-extended also ships a ffmpeg binary"
 
   depends_on "make" => :build
   depends_on "nasm" => :build
@@ -266,7 +266,7 @@ class FfmpegSkyzyx < Formula
       --enable-small
       --enable-version3
       --enable-videotoolbox
-      --extra-version=skyzyx
+      --extra-version=thesofakillers
       --cc=#{ENV.cc}
       --host-cflags="#{ENV.cflags.strip}"
     ]

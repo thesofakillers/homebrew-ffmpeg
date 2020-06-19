@@ -9,18 +9,18 @@ A build of FFMPEG which supports more than the official Homebrew build.
 
 The \`ffmpeg\` package from homebrew-core supports most modern codecs, including H.264/AVC, H.265/HEVC, Theora, VP8, VP9, AV1, and support for Intel Quick Sync hardware encoding/decoding (in [Sandy Bridge and newer Macs](https://en.wikipedia.org/wiki/List_of_Macintosh_models_grouped_by_CPU_type#Sandy_Bridge)).
 
-This \`ffmpeg-skyzyx\` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); and some alternate encoder implementations.
+This \`ffmpeg-extended\` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); and some alternate encoder implementations.
 
 ## Installation
 
-\`brew install skyzyx/ffmpeg/ffmpeg-skyzyx\`
+\`brew install thesofakillers/ffmpeg/ffmpeg-extended\`
 
-Or \`brew tap skyzyx/ffmpeg\` and then \`brew install ffmpeg-skyzyx\`.
+Or \`brew tap thesofakillers/ffmpeg\` and then \`brew install ffmpeg-extended\`.
 
 Or install via URL (which will not receive updates):
 
 \`\`\`bash
-brew install https://raw.githubusercontent.com/skyzyx/homebrew-ffmpeg/master/Formula/ffmpeg-skyzyx.rb
+brew install https://raw.githubusercontent.com/thesofakillers/homebrew-ffmpeg/master/Formula/ffmpeg-extended.rb
 \`\`\`
 
 ## Support
@@ -80,6 +80,10 @@ $(cat docs/bsfs.txt | xargs | sed "s/\n/ /g")
 ### Hardware Acceleration
 
 $(cat docs/hwaccels.txt | xargs | sed "s/\n/ /g")
+
+## Acknowledgements
+
+This is a fork of original work by GitHub user [skyzyx](https://github.com/skyzyx/), primarily to enable MPEG-DASH demuxing, disabling chromaprint in the process. Most of the work was done by him.
 
 ## Documentation
 

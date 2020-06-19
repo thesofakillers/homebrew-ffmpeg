@@ -1,4 +1,4 @@
---prefix=/usr/local/Cellar/ffmpeg-skyzyx/HEAD-0b8956b_1
+--prefix=/usr/local/Cellar/ffmpeg-extended/HEAD-0b8956b_1
 --disable-htmlpages
 --disable-indev=jack
 --disable-libjack
@@ -167,5 +167,5 @@
 --enable-small
 --enable-version3
 --enable-videotoolbox
---extra-version=skyzyx
+--extra-version=thesofakillers
 --cc=clang
